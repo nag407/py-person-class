@@ -2,8 +2,8 @@ class Person:
  
     people = {}
     def __init__(self, name: str, age: int):
-        self.name = name  # instance attribute
-        self.age = age  # instance attribute
+        self.name = name
+        self.age = age
         Person.people[name] = self
 
 
