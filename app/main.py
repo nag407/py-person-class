@@ -9,7 +9,7 @@ class Person:
 
 def create_person_list(people: list) -> list:
 
-    person_list = [Person(data["name"], data["age"]) for data in people]
+    result = [Person(data["name"], data["age"]) for data in people]
     
     for data in people:
         person = Person.people[data["name"]]
@@ -20,4 +20,4 @@ def create_person_list(people: list) -> list:
         if data.get("husband"):
             person.husband = Person.people[data["husband"]]
             
-    return person_list
+    return result
